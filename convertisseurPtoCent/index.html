@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"> <!--char spé-->
+    <meta name="autore" content="Raphaël"> <!--auteur-->
+    <meta name="description" content="tuto HTML"> <!--description-->
+    <meta name="keyworld" content="html,tuto,site"> <!--mot clef-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--taille et zoom-->
+    <title>cavalier</title> <!--titre de la page-->
+    <script src="fonction.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div style=" width: 100%; height: 25px;">
+        <div style="display: flex; flex-direction: column; width: 60%;margin-left: 20%;">
+            <div style="display: flex; flex-direction: row;padding: 5px;">
+                <div style="display: flex; flex: 1;justify-content: end;">
+                    <p>centimetre :</p>
+                </div>
+                <div style="display: flex; flex:2; margin-left: 8px;">
+                    <textarea id="txcenti" rows="1" cols="80" wrap="soft" value="codez"
+                        style="resize: none;"></textarea>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row;padding: 5px;padding-left: 200px;">
+                <div style="display: flex; flex: 1;margin-left: 24.7%;">
+                    <button onclick="convToPouce()">convert to pouce</button>
+                </div>
+                <div style="display: flex; flex:2.22;">
+                    <button onclick="convToCenti()">convert to centimetre</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row;padding: 5px;;">
+                <div style="display: flex; flex: 1;justify-content: end;">
+                    <p>pouce:</p>
+                </div>
+                <div style="display: flex; flex:2; margin-left: 8px;">
+                    <textarea id="txpouce" name="entreText" rows="1" cols="80" wrap="soft"
+                        style="resize: none;"></textarea>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 60%;margin-left: 20%;">
+            <div style="display: flex; flex-direction: row;padding: 5px;">
+                <div style="display: flex; flex: 1;justify-content: end;">
+                    <select id="input">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                        <option value="k">K</option>
+                    </select>
+                </div>
+                <div style="display: flex; flex:2; margin-left: 8px;">
+                    <textarea id="temp1" rows="3" cols="80" wrap="soft" value="codez"
+                        style="resize: none;"></textarea>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row;padding: 5px;padding-left: 55%;">
+                <div style="display: flex; flex:1;">
+                    <button onclick="convTemp()">convert to </button>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row;padding: 5px;;">
+                <div style="display: flex; flex: 1;justify-content: end;">
+                    <select id = "output">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                        <option value="k">K</option>
+                    </select>
+                </div>
+                <div style="display: flex; flex:2; margin-left: 8px;">
+                    <textarea id="temp2" name="entreText" rows="3" cols="80" wrap="soft"
+                        style="resize: none;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
